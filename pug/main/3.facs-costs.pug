@@ -1,0 +1,49 @@
+#facultatives-costs
+	.container
+		+gt('','Выберите факультатив для себя')
+		.facultatives-table
+			.facultatives-table-row
+				.facultatives-table-col
+					h4.facultatives-table-title Факультатив 
+						span "Любовный треугольник"
+					p.more-button(data-toggle="modal" data-target="#fac-1") Подробнее...
+				.facultatives-table-col
+					p.facultatives-table-cost Стоимость:
+						span 900р.
+					+button('button-cost',cost_1,'Выбрать', '_blank')
+			.facultatives-table-row
+				.facultatives-table-col
+					h4.facultatives-table-title Факультатив 
+						span "Развод и его влияние на детей"
+					p.more-button(data-toggle="modal" data-target="#fac-2") Подробнее...
+				.facultatives-table-col
+					p.facultatives-table-cost Стоимость:
+						span 900р.
+					+button('button-cost',cost_2,'Выбрать', '_blank')
+			.facultatives-table-row
+				.facultatives-table-col
+					h4.facultatives-table-title Факультатив 
+						span "Созадние пары"
+					p.more-button(data-toggle="modal" data-target="#fac-3") Подробнее...
+				.facultatives-table-col
+					p.facultatives-table-cost Стоимость:
+						span 900р.
+					+button('button-cost',cost_3,'Выбрать', '_blank')
+			.facultatives-table-row
+				.facultatives-table-col
+					h4.facultatives-table-title Факультатив 
+						span "Подростки"
+					p.more-button(data-toggle="modal" data-target="#fac-4") Подробнее...
+				.facultatives-table-col
+					p.facultatives-table-cost Стоимость:
+						span 900р.
+					+button('button-cost',cost_4,'Выбрать', '_blank')
+			.facultatives-table-row
+				.facultatives-table-col
+					h4.facultatives-table-title Факультатив 
+						span "Роль отца в жизни ребенка"
+					p.more-button(data-toggle="modal" data-target="#fac-5") Подробнее...
+				.facultatives-table-col
+					p.facultatives-table-cost Стоимость:
+						span 900р.
+					+button('button-cost',cost_5,'Выбрать', '_blank')

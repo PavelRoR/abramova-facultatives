@@ -1,0 +1,47 @@
+-var head_url = 'https://abramova.mastervision.su/facultatives/';
+-var head_title = '«Факультативы от Жанны Абрамовой»';
+-var head_description = 'Дополнительное Обучение по полевой терапии системных расстановок';
+//- -var head_img = 'img/banner.jpg';
+-var styles = 'css/styles.min.css';
+-var fav_ico = 'favicon.ico';
+-var fav_png = 'favicon.png';
+-var cost_1 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3873&clean=true&lg=ru';
+-var cost_2 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3876&clean=true&lg=ru';
+-var cost_3 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3874&clean=true&lg=ru';
+-var cost_4 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3875&clean=true&lg=ru';
+-var cost_5 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4041&clean=true&lg=ru';
+-var oferta = 'oferta/oferta.doc'
+
+mixin gt(cl, h3)
+	h3.general-title(class= cl)= h3
+		span
+
+mixin button(cl,href,p, target)
+	a.button(class= cl, href= href, target= target)=p
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		include pug/header
+		include pug/main/1.main.pug
+		include pug/main/2.for.pug
+		//- section#facultatives
+		include pug/main/3.fac-1.pug
+		include pug/main/3.fac-2.pug
+		include pug/main/3.fac-3.pug
+		include pug/main/3.fac-4.pug
+		include pug/main/3.fac-5.pug
+		include pug/main/3.facs-costs.pug
+		.author-container
+			include pug/main/4.author.pug
+			include pug/main/5.revs.pug
+		include pug/main/6.footer.pug
+		include pug/main/7.modals.pug
+		include pug/main/8.scripts.pug
+		//- include pug/scripts/callback
+		//- <script src="//code.jivosite.com/widget.js" data-jv-id="UPm98E8VpR" async></script>
+		include pug/scripts/body_bottom_scripts

@@ -1,0 +1,70 @@
+#facultatives-costs
+	padding 40px 0 90px
+	background-color: #CEE2F0
+	background-image url(../img/backgrounds/facs-bg.png)
+	background-repeat no-repeat
+	background-position: center top
+	background-size: cover
+.facultatives-table
+	width 100%
+	max-width 820px
+	margin 0 auto
+	&-col
+		display: block
+		&:first-of-type
+			width 65%
+			float left
+			padding-right: 10px
+		&:last-of-type
+			width 35%
+			float: right
+	&-title
+		font-size: 20px
+		color #292626
+		font-family: RO
+		margin-bottom: 30px
+	&-cost
+		font-size: 20px
+		font-family:PH
+		text-align: center
+		color #fff
+		span
+			font-size: 24px
+			display block
+			font-family: RO
+			color #292626
+			margin 15px 0
+.facultatives-table-row
+	display block
+	width 100%
+	overflow hidden
+	padding 30px 35px
+	&:nth-of-type(2n + 1)
+		border: 4px dotted rgba(#959CB3, 1)
+		background-color: rgba(#8a3634,.4);
+	&:nth-of-type(2n)
+		background-color: rgba(184, 184, 184,.4);
+		.facultatives-table-cost
+		.more-button
+			color #8a3634
+
+.more-button
+	cursor pointer
+	font-size: 20px
+	font-family: PH
+	display: inline-block
+	border-bottom: 1px solid
+	color #fff
+.button-cost
+	border: 2px solid  rgb(246, 196, 98);
+	background-color: rgb(138, 54, 52);
+	max-width: 248px;
+	height: 32px;
+	line-height: 28px;
+	color #fff
+	font-size: 20px
+	font-family: PH
+	&:hover
+		border: 2px solid  rgb(138, 54, 52);
+		background-color: rgb(246, 196, 98);
+		color rgb(138, 54, 52);
