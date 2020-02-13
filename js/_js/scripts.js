@@ -30,7 +30,7 @@ $(document).ready(function () {
         $('#video-revs').on('slide.bs.carousel', function () {
             $('.video-wrapper-revs iframe').each(function () {
                 var l = $(this).parent().attr('data-img');
-                $(this).parent().html('<img class="video_rev_img" src="' + l + '" alt="Видео отзыв">');
+                $(this).parent().html('<img src="' + l + '" alt="Видео отзыв">');
             });
             $(".video-wrapper-revs img").click(function () {
                 var a = $(this).parent().attr("data-youtube");

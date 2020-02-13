@@ -10,7 +10,17 @@
 -var cost_3 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3874&clean=true&lg=ru';
 -var cost_4 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3875&clean=true&lg=ru';
 -var cost_5 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4041&clean=true&lg=ru';
--var oferta = 'oferta/oferta.doc'
+-var cost_6 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4085&clean=true&lg=ru';
+-var cost_7 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4194&clean=true&lg=ru';
+-var cost_8 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4191&clean=true&lg=ru';
+-var cost_9 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4192&clean=true&lg=ru';
+-var cost_10 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4347&clean=true&lg=ru';
+-var cost_11 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4348&clean=true&lg=ru';
+-var cost_12 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4349&clean=true&lg=ru';
+-var cost_13 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4494&clean=true&lg=ru';
+-var cost_14 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4495&clean=true&lg=ru';
+-var cost_15 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4496&clean=true&lg=ru';
+-var oferta = 'https://mastervision.su/oferta.docx'
 
 mixin gt(cl, h3)
 	h3.general-title(class= cl)= h3
@@ -29,12 +39,22 @@ html(lang="ru")
 		include pug/header
 		include pug/main/1.main.pug
 		include pug/main/2.for.pug
-		//- section#facultatives
-		include pug/main/3.fac-1.pug
-		include pug/main/3.fac-2.pug
-		include pug/main/3.fac-3.pug
-		include pug/main/3.fac-4.pug
-		include pug/main/3.fac-5.pug
+		section#facultatives
+			include pug/main/3.fac-13.pug
+			include pug/main/3.fac-14.pug
+			include pug/main/3.fac-15.pug
+			include pug/main/3.fac-11.pug
+			include pug/main/3.fac-12.pug
+			include pug/main/3.fac-1.pug
+			include pug/main/3.fac-2.pug
+			include pug/main/3.fac-3.pug
+			include pug/main/3.fac-4.pug
+			include pug/main/3.fac-5.pug
+			include pug/main/3.fac-6.pug
+			include pug/main/3.fac-7.pug
+			include pug/main/3.fac-8.pug
+			include pug/main/3.fac-9.pug
+			include pug/main/3.fac-10.pug
 		include pug/main/3.facs-costs.pug
 		.author-container
 			include pug/main/4.author.pug
